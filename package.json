@@ -1,0 +1,20 @@
+{
+  "name": "ec2-manager",
+  "version": "0.1.0",
+  "bin": {
+    "ec2-manager": "bin/ec2-manager.js"
+  },
+  "scripts": {
+    "build": "echo \"The build step is not required when using JavaScript!\" && exit 0",
+    "cdk": "cdk",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@aws-cdk/assert": "1.27.0",
+    "aws-cdk": "1.27.0",
+    "jest": "^24.9.0"
+  },
+  "dependencies": {
+    "@aws-cdk/core": "1.27.0"
+  }
+}
