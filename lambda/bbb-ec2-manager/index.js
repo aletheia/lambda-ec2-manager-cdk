@@ -1,23 +1,20 @@
 const AWS = require('aws-sdk');
-const {InstanceIds} = require('./config.json');
 const ec2 = new AWS.EC2();
+
+const InstanceIds = process.env.INSTANCE_IDS.split(',');
 
 function parseCWevent(event) {
   const eventDate = new Date(event.time);
   const h = eventDate.getHours();
   // const m = eventDate.getMinutes();
-  const d = eventDate.getDay();
-
 
   let op;
-
-  if (d !== 0) {
-    if ((h > 6) && (h < 9)) {
-      op = 'start';
-    } else if ((h > 16) && (h < 18)) {
-      op = 'stop';
-    }
+  if ((h >= 6) && (h <= 8)) {
+    op = 'start';
+  } else if ((h >= 16) && (h <= 18)) {
+    op = 'stop';
   }
+
   return op;
 }
 

@@ -1,0 +1,9 @@
+{
+    "instanceIds": [
+        "i-04d505c006501724b"
+    ],
+    "scheduleInUTC":{
+        "on":"cron(15 6 ? * MON-SAT *)",
+        "off":"cron(15 16 ? * MON-SAT *)"
+    }
+}

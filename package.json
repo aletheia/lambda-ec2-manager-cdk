@@ -10,11 +10,19 @@
     "test": "jest"
   },
   "devDependencies": {
-    "@aws-cdk/assert": "1.27.0",
-    "aws-cdk": "1.27.0",
-    "jest": "^24.9.0"
+    "@aws-cdk/assert": "1.30.0",
+    "aws-cdk": "1.30.0",
+    "aws-sdk": "^2.644.0",
+    "eslint": "^6.8.0",
+    "eslint-config-google": "^0.14.0",
+    "jest": "^25.1.0"
   },
   "dependencies": {
-    "@aws-cdk/core": "1.27.0"
+    "@aws-cdk/aws-apigateway": "^1.30.0",
+    "@aws-cdk/aws-events": "^1.30.0",
+    "@aws-cdk/aws-events-targets": "^1.30.0",
+    "@aws-cdk/aws-iam": "^1.30.0",
+    "@aws-cdk/aws-lambda": "^1.30.0",
+    "@aws-cdk/core": "1.30.0"
   }
 }
